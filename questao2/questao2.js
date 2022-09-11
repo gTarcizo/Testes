@@ -5,7 +5,11 @@ ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o núme
 
 IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código; 
 */
+let numero = Number(prompt('Digite um número: '))
 
+const reload = () => {
+  document.location.reload(true)
+}
 
 const numeroQuadrado = (x) =>{ 
     let teste = parseInt(Math.sqrt(x));
@@ -17,10 +21,8 @@ const checarFibonacci = (n = 0) => {
    return numeroQuadrado(5 * n * n + 4) || numeroQuadrado(5 * n * n - 4);
 }
 
-// para checar é só 
-// enviar um valor  ↓
-if(checarFibonacci( 9 )){
-  console.log('Faz parte!')
+if(checarFibonacci( numero )){
+  alert(`O valor ${numero}: Faz parte!`)
 }else{
-  console.log('Não faz parte')
+  alert(`O valor ${numero}: não faz parte!`)
 }

@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(3, 0, 7);
+}
+div{
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reload{
+    background-color: rgb(53, 53, 63);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.reload:hover{
+    background-color: rgba(53, 53, 63, 0.616);
+    transition: 200ms;
+}
