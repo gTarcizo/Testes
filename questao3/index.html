@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="tableFromJson(faturamentos)">
+    <div id="showData"></div>
+    <div class="buttons">
+        <input class="button" type="button" value="Maior Faturamento" onclick="maiorFaturamento()">
+        <input class="button" type="button" value="Menor Faturamento" onclick="menorFaturamento()">
+        <input class="button" type="button" value="superior à média mensal" onclick="acimaMedia()">
+    </div>
+    <div id="res"></div>
+    <div id="res2"></div>
+    <script src="questao3.js"></script>
+  </body>
+</html>
